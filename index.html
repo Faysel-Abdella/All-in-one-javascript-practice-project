@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="styel.css" rel="stylesheet" />
+    <script src="script.js" defer></script>
+    <title>Appie Log In</title>
+  </head>
+  <body>
+    <div id="backdrop" class="backdrop"></div>
+    <header class="header">
+      <nav class="top-nav" id="top-nav">
+        <img src="img/logo.png" alt="Appie-Logo" class="logo-img" />
+        <button class="nav-btn log-in-btn" id="log-in-btn">Log in</button>
+        <button class="nav-btn sign-up-btn" id="sign-up-btn">Sign up</button>
+      </nav>
+    </header>
+
+    <div class="log-in" id="log-in">
+      <form>
+        <h3>Log in</h3>
+        <div class="form-control">
+          <lable for="log-username" class="username">User name</lable>
+          <input type="text" id="log-username" />
+          <small>Error message</small>
+        </div>
+        <div class="form-control">
+          <lable for="log-password" class="password">password</lable>
+          <input type="password" id="log-password" />
+          <small>Error message</small>
+        </div>
+        <button class="log-in-submit" id="log-in-submit">Log in</button>
+      </form>
+    </div>
+
+    <div class="sign-up" id="sign-up">
+      <form>
+        <h3>Sign up</h3>
+
+        <div class="form-control">
+          <lable for="username" class="username">User name</lable>
+          <input type="text" id="username" placeholder="Enter Username" />
+          <small>Error message</small>
+        </div>
+        <div class="form-control">
+          <lable for="email" class="email">Email</lable>
+          <input type="email" id="email" placeholder="Enter your email" />
+          <small>Error message</small>
+        </div>
+        <div class="form-control">
+          <lable for="password" class="password">password</lable>
+          <input type="password" id="password" placeholder="Enter password" />
+          <small>Error message</small>
+        </div>
+        <div class="form-control">
+          <lable for="password2" class="password2">Conform password</lable>
+          <input
+            type="password"
+            id="password2"
+            placeholder="Enter password again"
+          />
+          <small>Error message</small>
+        </div>
+        <button class="sign-up-submit" id="sign-up-submit">Sign up</button>
+      </form>
+    </div>
+
+
+    <main>
+      <section class="section-hero">
+        <h2>Well come to <strong>Appie</strong></h2>
+        <div class="screen-show" id="screen-show">
+          <p class="inside-screen" id="inside-screen">
+            Choose your favorite meal <br />
+            And make your life easy
+          </p>
+        </div>
+        <div class="meals-container" id="meals-container">
+          <div class="choices">
+            <label class="type-label">Chooce your meal type here:</label>
+            <select class="meal-type" id="meal-type">
+              <option value="Breakfast">Breakfast</option>
+              <option value="Dinner">Dinner</option>
+              <option value="Fast-foods">Fast foods</option>
+            </select>
+          </div>
+
+          <p class="available" id="available">
+            Here are available meals for
+            <strong class="chosen-type">Break-fast</strong>
+          </p>
+
+
+          <div class="avilable-meals-container" id="available-meals-container">
+            <div class="available-meal" id="available-meals-1">
+              <p class="ordered-txt invisible" >Ordered</p>
+              <h3 class="meal-title">Egg</h2>
+              <p class="meal-price" >
+                $<strong class="price" >10</strong>
+              </p>
+              <p class="order-hour" id="order-hour">
+                After <span class="hour" >1</span> hour
+              </p>
+              <button class="order-btn" >Order Now</button>
+            </div>
+
+            <div class="available-meal" id="available-meals-2">
+              <p class="ordered-txt invisible" >Ordered</p>
+              <h3 class="meal-title">Ful</h3>
+              <p class="meal-price" >
+                $<strong class="price" >13</strong>
+              </p>
+              <p class="order-hour" id="order-hour">
+                After <span class="hour" >1</span> hour
+              </p>
+              <button class="order-btn" >Order Now</button>
+            </div>
+
+            <div class="available-meal" id="available-meals-3">
+              <p class="ordered-txt invisible" >Ordered</p>
+
+              <h3 class="meal-title">Firfir</h3>
+              <p class="meal-price" >
+                $<strong class="price" >17</strong>
+              </p>
+              <p class="order-hour" id="order-hour">
+                After <span class="hour" >1</span> hour
+              </p>
+              <button class="order-btn" >Order Now</button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+    
+    </main>
+  </body>
+</html>

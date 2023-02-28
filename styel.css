@@ -1,0 +1,272 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700&family=Roboto:wght@300;400;500;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&family=Tilt+Neon&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --success-color: green;
+  --error-color: red;
+}
+
+body {
+  margin: 0;
+  font-family: "Open Sans", sans-serif;
+}
+
+.header {
+  background-color: #c0eb75;
+  padding: 24px;
+}
+
+.section-hero h2 {
+  margin-top: 34px;
+}
+
+.backdrop {
+  width: 100%;
+  padding: 16px;
+}
+.top-nav {
+  display: flex;
+}
+
+.logo-img {
+  margin-right: auto;
+}
+
+button {
+  font-family: "Tilt Neon", cursive;
+  cursor: pointer;
+}
+
+.nav-btn {
+  font-size: 16px;
+  font-weight: bold;
+  color: #fff;
+  background-color: cornflowerblue;
+  border: none;
+  border-radius: 10px;
+  margin: 4px;
+  padding: 10px;
+}
+
+.nav-btn:hover {
+  background-color: rgb(40, 17, 124);
+}
+
+h2,
+h3,
+p {
+  text-align: center;
+}
+
+h2 {
+  font-size: 46px;
+  font-weight: bold;
+}
+
+.log-in {
+  background-color: chocolate;
+  position: fixed;
+  z-index: 9;
+  background: white;
+  border-radius: 10px;
+  width: 30%;
+  top: 30%;
+  left: 30%;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.26);
+  display: none;
+}
+
+.log-in.visible {
+  display: block;
+  z-index: 999999;
+  /* animation: fade-slide-in 0.3s ease-out forwards; */
+}
+
+form {
+  background-color: rgb(232, 217, 247);
+  border-radius: 10px;
+  padding: 16px;
+}
+
+lable {
+  display: block;
+  margin-bottom: 4px;
+  font-weight: 600;
+}
+
+input {
+  width: 100%;
+  padding: 6px;
+  border: none;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
+  border-radius: 6px;
+}
+
+input:focus {
+  border: none;
+  outline: gold;
+  outline-style: solid;
+}
+
+.form-control small {
+  visibility: hidden;
+}
+
+.form-control.error small {
+  visibility: visible;
+  color: var(--error-color);
+}
+
+.log-in-submit,
+.sign-up-submit {
+  border: none;
+  display: block;
+  text-align: center;
+  margin: 0 auto;
+  margin-top: 26px;
+  padding: 6px 26px;
+  border-radius: 6px;
+}
+
+.sign-up {
+  position: fixed;
+  width: 30%;
+  height: 30vh;
+  top: 10%;
+  left: 30%;
+  display: none;
+  z-index: 10;
+}
+
+.sign-up.visible {
+  display: block;
+  z-index: 9999;
+}
+
+.section-hero {
+  padding: 12px;
+  background-color: #d8f5a2;
+}
+
+#backdrop {
+  position: fixed;
+  width: 100%;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.75);
+  z-index: 1;
+  pointer-events: auto;
+  display: none;
+}
+
+#backdrop.visible {
+  display: block;
+  pointer-events: all;
+}
+
+/* -------------MEALS SECTION----------------- */
+
+.meals-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.screen-show {
+  margin: 46px auto 24px auto;
+  height: 5rem;
+  width: 50%;
+  background-color: #e9fac8;
+  border-radius: 10px;
+}
+
+.type-label,
+.available,
+.inside-screen {
+  font-size: 20px;
+}
+
+.inside-screen {
+  font-size: 24px;
+  padding: 8px;
+}
+
+.meal-type {
+  font-family: "Tilt Neon", cursive;
+  margin: 5px 5px 24px 5px;
+  padding: 3px;
+  border-radius: 4px;
+  font-size: 16px;
+  font-weight: 600;
+  border: 3px solid #c0eb75;
+}
+
+.meal-type:focus {
+  outline: none;
+}
+
+/* --AVAILABLE MEALS ----- */
+
+.avilable-meals-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 3rem;
+  margin-top: 36px;
+}
+
+.available-meal {
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  width: 9rem;
+  background-color: #f4fce3;
+  padding: 10px 6px;
+  border-radius: 10px;
+}
+
+.ordered-txt {
+  background-color: #94d82d;
+  padding: 2px 24px;
+  font-size: 12px;
+  font-weight: 500;
+  text-transform: uppercase;
+  transform: rotate(-45deg);
+  top: 12px;
+  right: 68px;
+  position: absolute;
+}
+
+.invisible {
+  display: none;
+}
+
+.meal-title {
+  margin: 8px 0 8px 0;
+  font-size: 24px;
+}
+
+.order-hour {
+  margin-top: 5px;
+}
+
+.order-btn {
+  margin-top: 16px;
+  background-color: #94d82d;
+  border: none;
+  border-radius: 5px;
+  padding: 6px;
+  justify-self: center;
+}
+
+.order-btn:hover {
+  background-color: #afdb6c;
+}
